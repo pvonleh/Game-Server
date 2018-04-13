@@ -110,10 +110,10 @@ This will try to get a user from the database,
 Run the server again and try calling it again.  This time you should see that there is no such user.  That’s a little different than before.  So let’s take a look at getting data into the data base.  One way is from the command shell:
 
 python manage.py shell
-">>> from user.models import User"
-">>> u = User(‘zelda’)"
-">>> u.save()"
-">>> exit()"
+> from user.models import User
+> u = User(‘zelda’)
+> u.save()
+> exit()
 
 Now run your program, or if it is still running try reloading the webpage.  Hopefully it found Zelda this time.
 
